@@ -35,6 +35,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 //fontawsome
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AddrecordComponent } from './addrecord/addrecord.component';
 
 const appRoutes: Routes = [
   { path: 'companynews', component: CompanynewsComponent },
@@ -63,7 +64,8 @@ const appRoutes: Routes = [
     HseComponent,
     AddhseComponent,
     AddcompanynewsimagesComponent,
-    MenuComponent
+    MenuComponent,
+    AddrecordComponent
   ],
   imports: [
     BrowserModule,
