@@ -9,16 +9,17 @@
           <th>Cover</th>
           <th></th>
         </tr>
-        <tr>
+        <tr *ngFor="let index of companyNews">
           <td>
-              <h6>العدد ال ١٠٠</h6>
+            <h6>{{index.name}}</h6>
           </td>
           <td>
-              <img src="/assets/news.png" alt="">
+            <img src="{{index.coverurl}}" alt="">
           </td>
-
           <td>
-              <h6><fa name="trash"></fa></h6>
+            <h6>
+              <fa name="trash"></fa>
+            </h6>
           </td>
         </tr>
       </table>
