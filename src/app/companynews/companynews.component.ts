@@ -12,7 +12,7 @@ export class CompanynewsComponent implements OnInit {
   constructor(private api:ApiService) { }
 
   ngOnInit() {
-    this.api.getCompanyNews("company").subscribe((data)=>{
+    this.api.getNewsletters("company").subscribe((data)=>{
       this.companyNews=data;
     });
   }
